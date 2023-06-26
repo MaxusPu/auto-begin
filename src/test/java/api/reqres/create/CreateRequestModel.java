@@ -1,4 +1,4 @@
-package api.create;
+package api.reqres.create;
 
 public class CreateRequestModel {
 

@@ -1,4 +1,4 @@
-package api.login;
+package api.reqres.login;
 
 public class LoginRequestModel {
 

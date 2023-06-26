@@ -1,4 +1,4 @@
-package api.login;
+package api.reqres.login;
 
 import api.BaseTest;
 import io.restassured.response.ValidatableResponse;

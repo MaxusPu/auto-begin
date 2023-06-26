@@ -13,4 +13,7 @@ public class BaseRequestSpecification extends BaseTest {
 //            .addFilter(new RequestLoggingFilter()).addFilter(new ResponseLoggingFilter()).build().
 //            config(new RestAssuredConfig().sslConfig(new SSLConfig().keyStore("","").trustStore("",""))).
 //            relaxedHTTPSValidation();
+
+    public static RequestSpecification usersSpec = new RequestSpecBuilder().setBaseUri(usersurl)
+            .addFilter(new RequestLoggingFilter()).addFilter(new ResponseLoggingFilter()).build().relaxedHTTPSValidation();
 }

@@ -1,4 +1,4 @@
-package api.create;
+package api.reqres.create;
 
 import api.BaseTest;
 import io.restassured.response.ValidatableResponse;
