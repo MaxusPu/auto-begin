@@ -1,4 +1,4 @@
-package api.register;
+package api.login;
 
 public class LoginRequestModel {
 

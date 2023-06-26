@@ -1,4 +1,4 @@
-package api.register;
+package api.login;
 
 import api.BaseTest;
 import io.restassured.response.ValidatableResponse;

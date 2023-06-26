@@ -3,7 +3,7 @@ package utils.client;
 import api.BaseTest;
 import api.Endpoint;
 import api.create.CreateRequestModel;
-import api.register.LoginRequestModel;
+import api.login.LoginRequestModel;
 import io.qameta.allure.Step;
 import io.restassured.http.ContentType;
 import io.restassured.response.ValidatableResponse;
@@ -23,7 +23,7 @@ public class ReqresClient extends BaseTest {
                 .then();
     }
 
-    @Step("регистрация .../api/login")
+    @Step("авторизация .../api/login")
     public static ValidatableResponse login(LoginRequestModel body) {
         return given().spec(reqresSpec)
                 .contentType(ContentType.JSON)
