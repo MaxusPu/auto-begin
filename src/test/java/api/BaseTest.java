@@ -12,8 +12,10 @@ import java.util.Properties;
 
 public class BaseTest {
     static String reqresurl;
+
+    static String tipsurl;
     static String usersurl;
-    static String dburl;
+    static String tipsdburl;
     static String username;
     static String password;
 
@@ -21,9 +23,8 @@ public class BaseTest {
         Properties properties = new Properties();
         InputStream inputStream = BaseTest.class.getClassLoader().getResourceAsStream("app.properties");
         properties.load(inputStream);
-        reqresurl = properties.getProperty("reqresurl");
-        usersurl = properties.getProperty("usersurl");
-        dburl = properties.getProperty("dburl");
+        tipsurl = properties.getProperty("tipsurl");
+        tipsdburl = properties.getProperty("tipsdburl");
         username = properties.getProperty("username");
         password = properties.getProperty("password");
     }
@@ -38,6 +39,6 @@ public class BaseTest {
     }
 
     public static Connection getConnection() throws SQLException {
-        return DriverManager.getConnection(dburl, username, password);
+        return DriverManager.getConnection(tipsdburl, username, password);
     }
 }

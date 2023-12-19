@@ -6,7 +6,7 @@ import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.specification.RequestSpecification;
 
 public class BaseRequestSpecification extends BaseTest {
-    public static RequestSpecification reqresSpec = new RequestSpecBuilder().setBaseUri(reqresurl)
+    public static RequestSpecification tipsSpec = new RequestSpecBuilder().setBaseUri(tipsurl)
             .addFilter(new RequestLoggingFilter()).addFilter(new ResponseLoggingFilter()).build().relaxedHTTPSValidation();
 
 //    public static RequestSpecification reqresSpec = new RequestSpecBuilder().setBaseUri(reqresurl)
@@ -14,6 +14,4 @@ public class BaseRequestSpecification extends BaseTest {
 //            config(new RestAssuredConfig().sslConfig(new SSLConfig().keyStore("","").trustStore("",""))).
 //            relaxedHTTPSValidation();
 
-    public static RequestSpecification usersSpec = new RequestSpecBuilder().setBaseUri(usersurl)
-            .addFilter(new RequestLoggingFilter()).addFilter(new ResponseLoggingFilter()).build().relaxedHTTPSValidation();
 }
