@@ -2,47 +2,27 @@ package testdata;
 
 public class User {
 
-    private String name;
-    private String job;
-    private String email;
-    private String password;
+    private String profileId;
+    private String qrUuid;
 
-    public User(String name, String job, String email, String password) {
-        this.name = name;
-        this.job = job;
-        this.email = email;
-        this.password = password;
+    public User(String profileId, String qrUuid) {
+        this.profileId = profileId;
+        this.qrUuid = qrUuid;
     }
 
-    public String getName() {
-        return name;
+    public String getProfileId() {
+        return profileId;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setProfileId(String profileId) {
+        this.profileId = profileId;
     }
 
-    public String getJob() {
-        return job;
+    public String getQrUuid() {
+        return qrUuid;
     }
 
-    public void setJob(String job) {
-        this.job = job;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
+    public void setQrUuid(String qrUuid) {
+        this.qrUuid = qrUuid;
     }
 }
